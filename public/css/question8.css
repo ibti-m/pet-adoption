@@ -1,0 +1,185 @@
+
+html,body{
+background:#f9c5bd;
+Font-family: Lucida Bright, Georgia, serif;
+margin:0;
+padding:0;
+overflow:auto;
+display:flex;
+flex-direction: column;
+
+}
+h1{
+    text-align: center;
+    padding:10px;
+}
+header {
+    background-color: #7c677f;
+    display: flex;
+    align-items: center;
+    padding:10px;
+    position: fixed;
+    width:100%; 
+    top:0;
+    left:20%;
+    height:10%;
+    z-index: 1;  
+}
+#date-time {
+    font-size: 16px;
+    color: #333;
+    margin-left: auto; 
+}
+#logo {
+    height: 60px;
+}
+
+.navbar{
+ background-color: #7c677f; 
+ width:20%;
+ height:100%;
+ position: fixed;
+ top:0;
+ left:0;
+ padding-top:15%;
+ z-index: 2;
+}
+.navbar a {
+   color:black; 
+   padding:10px;
+   text-decoration: none;
+   font-weight: bold;
+   display:block;
+    
+}
+.navbar a:hover{
+    color: white;
+    background-color: #9bc400;    
+}
+.navbar.responsive{
+    position:relative;
+}
+.content{
+margin-left:20%;
+  margin-top:10%;
+  padding:50px;
+  overflow-y:auto;
+
+}
+.content h1{
+    text-align: center;
+}
+.content form{
+  margin:0 auto;
+  max-width: 600px;
+  width:100%;
+  
+}
+
+.content form legend{
+  font-weight:bold;
+  
+}
+
+footer{
+    background-color: #7c677f;
+    text-align: center;
+    padding:10px;
+    margin-left:20%;
+    overflow:hidden;
+    bottom:0;
+    width:100%;
+    margin-top: 100%;
+    
+
+}
+footer a {
+    color:black;
+    text-decoration: none;
+    padding:10px;
+}
+footer a:hover{
+    color:white;
+    background-color:#9bc400;
+}
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-top:0;
+    }
+
+    .navbar a {
+        text-align: center;
+    }
+header{
+    width:100%;
+    left:0;
+    padding-top:10px;
+}
+    .content {
+        margin-left: 0;
+        margin-top: 20%; 
+    }
+}
+#welcomePage{
+    margin-top: 250px;
+}
+.catContainer, .dogContainer {
+    display:flex;
+    align-items: flex-start;
+}
+.catPic,.dogPic {
+    max-width: 400px;
+    height:200px;
+    margin-right: 20px;
+    margin-top:20px;
+}
+.catImage, .dogImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catText, .dogText {
+    width:400px;
+}
+.error{
+    color:red;
+}
+#comment{
+    width:300px;
+    height:100px;
+    
+}
+.dogInfo, .catInfo{
+margin-left:30px;
+}
+#results {
+    margin-top: 20px;
+}
+
+#results ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#results li {
+    margin-bottom: 10px;
+}
+#message{
+    font-weight: bold;
+    color: red;
+}
+#foundPets{
+    margin-top: 20%;
+    margin-left: 20%;
+}
+#usernameDisplay{
+    margin-left: 100px;
+    padding: 20px;
+    background-color:#5e4961;
+    font-weight: bold;
+
+}
