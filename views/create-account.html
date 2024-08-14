@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Create Account - Happy Tails</title>
+    <link rel="stylesheet" href="/css/question8.css">
+</head>
+<body>
+    <!-- HEADER PLACEHOLDER -->
+
+    <div class="content">
+        <form id="createAccountForm" onsubmit="return createAccount(event)">
+            <fieldset>
+                <legend>Create an Account</legend>
+                <p>Please enter a username and password to create an account.</p>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <p>Username can contain letters (both upper and lower case) and digits only.</p>
+                <span id="usernameError" class="error"></span><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <p>Password must be at least 4 characters long, with at least one letter and one digit.</p>
+                <span id="passwordError" class="error"></span><br>
+
+                <input type="submit" value="Create Account">
+            </fieldset>
+        </form>
+        <div id="message"></div>
+    </div>
+    <!-- FOOTER PLACEHOLDER -->
+    <script src="/js/script.js"></script>
+</body>
+</html>
+
+
+
